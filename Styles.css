@@ -1,0 +1,100 @@
+:root {
+    /* WOLF CORE */
+    --wolf-black: #0a0a0a;
+    --wolf-dark: #1a1a1a;
+    --wolf-gray: #4a4a4a;
+    --wolf-white: #ffffff;
+
+    /* AMERICANOS */
+    --wolf-usa-primary: #FF6200;
+    --wolf-usa-secondary: #FFFFFF;
+    --wolf-usa-accent: #FFD700;
+
+    /* JAPONESES */
+    --wolf-jdm-primary: #ff0000;
+    --wolf-jdm-secondary: #ffffff;
+    --wolf-jdm-accent: #1A1A1A;
+
+    /* EUROPEOS */
+    --wolf-eu-primary: #006eff;
+    --wolf-eu-secondary: #ffffff;
+    --wolf-eu-accent: #0D1117;
+}
+
+body {
+    background-color: var(--wolf-black);
+    color: var(--wolf-white);
+}
+
+header {
+    display: flex;
+    padding: 1rem;
+    background-color: var(--wolf-gray);
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Div-Text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Title {
+    font-weight: bold;
+    color: var(--wolf-white);
+}
+
+.Subtitle {
+    font-size: 1.2rem;
+    color: var(--wolf-white);
+    text-align: center;
+}
+
+.Subtitle2 {
+    font-size: 1.2rem;
+    color: var(--wolf-white);
+}
+
+.container-cards {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    background-color: var(--wolf-gray);
+    color: var(--wolf-white);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.img-card {
+    width: 380px;
+    height: 540px;
+    border-radius: 5px 5px 0 0;
+}
+
+.Usa:hover {
+    background-color: var(--wolf-usa-primary);
+    color: var(--wolf-usa-secondary);
+    transition: all 0.7s ease;
+    transform: scale(1.05);
+}
+
+.Eu:hover {
+    background-color: var(--wolf-eu-primary);
+    color: var(--wolf-eu-secondary);
+    transition: all 0.7s ease;
+    transform: scale(1.05);
+}
+
+.Jdm:hover {
+    background-color: var(--wolf-jdm-primary);
+    color: var(--wolf-jdm-secondary);
+    transition: all 0.7s ease;
+    transform: scale(1.05);
+}
