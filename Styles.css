@@ -44,6 +44,7 @@ header {
 .Title {
     font-weight: bold;
     color: var(--wolf-white);
+    text-shadow: 0 0 10px var(--wolf-green);
 }
 
 .Subtitle {
@@ -72,29 +73,35 @@ header {
     cursor: pointer;
 }
 
+.usa:hover {
+    background-image: linear-gradient(90deg, #B22234, #FFFFFF, #0a3f90);
+    color: var(--wolf-black);
+    transition: color 0.7s ease;
+    transition: background-image 1s ease;
+    transition: transform 1s ease;
+    transform: scale(1.05);
+}
+
+.jdm:hover {
+    background-image: linear-gradient(90deg, #FFFFFF, #B0313F, #FFFFFF);
+    color: var(--wolf-black);
+    transition: color 0.7s ease;
+    transition: background-image 1s ease;
+    transition: transform 1s ease;
+    transform: scale(1.05);
+}
+
+.eu:hover {
+    background-image: linear-gradient(90deg, #003399, #FFCC00, #003399);
+    color: var(--wolf-black);
+    transition: color 0.7s ease;
+    transition: background-image 1s ease;
+    transition: transform 1s ease;
+    transform: scale(1.05);
+}
+
 .img-card {
     width: 380px;
     height: 540px;
     border-radius: 5px 5px 0 0;
-}
-
-.Usa:hover {
-    background-color: var(--wolf-usa-primary);
-    color: var(--wolf-usa-secondary);
-    transition: all 0.7s ease;
-    transform: scale(1.05);
-}
-
-.Eu:hover {
-    background-color: var(--wolf-eu-primary);
-    color: var(--wolf-eu-secondary);
-    transition: all 0.7s ease;
-    transform: scale(1.05);
-}
-
-.Jdm:hover {
-    background-color: var(--wolf-jdm-primary);
-    color: var(--wolf-jdm-secondary);
-    transition: all 0.7s ease;
-    transform: scale(1.05);
 }
