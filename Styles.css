@@ -169,6 +169,7 @@ header {
     padding: 4rem;
     background-color: var(--wolf-white);
     border-radius: 10px;
+    margin-top: 5vh;
 }
 
 .container-cars-filters {
@@ -294,7 +295,61 @@ header {
 }
 
 .Divisor-Large {
-    width: 500px;
-    height: 3px;
+    width: 1500px;
+    height: 5px;
+    margin: auto;
     background: linear-gradient(to bottom, transparent, var(--wolf-white), transparent);
+}
+
+.IMG-History {
+    width: 300px;
+    height: 180px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px var(--wolf-usa-accent);
+}
+
+.Div-History-IMG {
+    display: flex;
+    align-items: center;
+    color: var(--wolf-black);
+    gap: 1vh;
+}
+
+.Text-History-2 {
+    margin-left: 10vh;
+}
+
+.Text-History-3 {
+    margin-right: 10vh;
+}
+
+.Divisor-History {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+}
+
+.Divisor-Footer {
+    width: 3px;
+    height: 100px;
+    background: linear-gradient(to bottom, transparent, var(--wolf-usa-primary), transparent);
+}
+
+.text-Footer-Title {
+    color: var(--wolf-usa-primary);
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.Footer-USA-Content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+}
+
+.Footer-USA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
 }
