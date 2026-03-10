@@ -1,3 +1,5 @@
+import autos from "./Data.js";
+
 document.getElementById("usa").addEventListener('click', AbrirUSA);
 
 function AbrirUSA() {
@@ -99,4 +101,14 @@ function AbrirUSA() {
     </div>
     `;
 }
+
+function MostrarAutos(country, brand, category) {
+    console.log(autos[country]);
+    console.log(autos[country].filter(auto => brand === "*" ? autos[country] : auto.marca === brand));
+}
+category === "*" ? autos[country] : auto.categoria === category
+
+MostrarAutos("americanos", "*", "SUV");
+
+export default AbrirUSA;
 
