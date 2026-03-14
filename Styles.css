@@ -136,6 +136,7 @@ header {
     padding: 0.5rem;
     border-radius: 5px;
     cursor: pointer;
+    width: 100px;
 }
 
 .header-USA-content-buttons button:hover {
@@ -443,15 +444,18 @@ header {
         0px 0px 15px var(--wolf-usa-primary);
     padding: 40px;
     position: relative;
-    overflow-y: auto;
     animation: scaleUp 0.3s ease-out;
 }
 
+.modal-specs {
+    display: contents;
+}
+
 .modal-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
     gap: 40px;
-    align-items: start;
+    align-items: center;
 }
 
 .modal-image-container {
@@ -459,10 +463,14 @@ header {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 2vh;
 }
 
 .modal-image-container img {
-    width: 100%;
+    width: 60%;
     height: auto;
     display: block;
     object-fit: cover;
@@ -473,10 +481,11 @@ header {
     transform: scale(1.05);
 }
 
-.modal-specs {
+.info-car {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 6px;
+    padding-left: 10px;
 }
 
 .wolf-title {
@@ -495,11 +504,14 @@ header {
 }
 
 .specs-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+    gap: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin: auto;
+    column-gap: 10vh;
 }
 
 .spec-item {
@@ -510,12 +522,12 @@ header {
 }
 
 .spec-label {
-    color: #888;
+    color: var(--wolf-usa-quaternary);
     font-weight: 500;
 }
 
 .spec-value {
-    color: #fff;
+    color: var(--wolf-usa-quaternary);
     font-weight: 600;
 }
 

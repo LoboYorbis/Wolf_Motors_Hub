@@ -56,12 +56,13 @@ function abrirDetallesWolf(coche) {
                 <div class="modal-grid">
                     <div class="modal-image-container">
                         <img src="${coche.img}" alt="${coche.marca} ${coche.modelo}">
+                        <div class="info-car">
+                            <h2 class="wolf-title">${coche.marca} ${coche.modelo}</h2>
+                            <p class="wolf-price">${coche.precio}</p>
+                        </div>
                     </div>
                     
                     <div class="modal-specs">
-                        <h2 class="wolf-title">${coche.marca} ${coche.modelo}</h2>
-                        <p class="wolf-price">${coche.precio}</p>
-                        
                         <div class="specs-list">
                             <div class="spec-item">
                                 <span class="spec-label">Motor:</span>
@@ -116,9 +117,8 @@ function abrirDetallesWolf(coche) {
                                 <span class="spec-value">${coche.categoria}</span>
                             </div>
                         </div>
-                        
-                        <button class="btn-buy">Solicitar Cotización VIP</button>
                     </div>
+                    <button class="btn-buy">Solicitar Cotización VIP</button>
                 </div>
             </div>
         </div>
@@ -189,9 +189,7 @@ function AbrirUSA() {
             <div class="header-USA-content">
                 <h1 class="Title-Header-USA"><em>Wolf Motors USA</em></h1>
                 <div class="header-USA-content-buttons">
-                    <button>Menu</button>
                     <button id="btn-back-home">Home</button>
-                    <button>Contact</button>
                 </div>
             </div>
         </section>
