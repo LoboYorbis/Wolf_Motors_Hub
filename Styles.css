@@ -10,9 +10,10 @@
     --wolf-usa-quaternary: #312B1E;
 
     /* JAPONESES */
-    --wolf-jdm-primary: #ff0000;
-    --wolf-jdm-secondary: #ffffff;
-    --wolf-jdm-accent: #1A1A1A;
+    --wolf-jdm-primary: #2D3436;
+    --wolf-jdm-secondary: #DFE6E9;
+    --wolf-jdm-tertiary: #FFFFFF;
+    --wolf-jdm-quaternary: #D3B037;
 
     /* EUROPEOS */
     --wolf-eu-primary: #006eff;
@@ -605,4 +606,207 @@ header {
     color: var(--wolf-usa-secondary);
     transition: color 0.7s ease;
     transition: background-color 0.7s ease;
+}
+
+.Body-JDM {
+    background-color: var(--wolf-jdm-secondary);
+    width: 99%;
+    height: 99%;
+    border-radius: 20px;
+    margin: auto;
+}
+
+.header-JDM {
+    display: flex;
+    background-color: var(--wolf-jdm-primary);
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    border-top: 4px solid var(--wolf-jdm-quaternary);
+    animation: slideFromBottom 1s ease-out;
+}
+
+.header-JDM-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 2vh;
+}
+
+.Title-Header-JDM {
+    color: var(--wolf-jdm-quaternary);
+    font-size: 2.5rem;
+}
+
+.header-JDM-content-buttons {
+    display: flex;
+    gap: 1vh;
+}
+
+.header-JDM-content-buttons button {
+    background-color: var(--wolf-jdm-secondary);
+    color: var(--wolf-jdm-primary);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.header-JDM-content-buttons button:hover {
+    box-shadow: 0 0 20px var(--wolf-jdm-quaternary);
+    transform: scale(1.1);
+    transition: all 0.7s ease;
+}
+
+.Bienvenida-JDM {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3vh;
+    margin: 3vh;
+}
+
+.Title-Container-Car-JDM {
+    color: var(--wolf-jdm-quaternary);
+    font-size: 2.5rem;
+}
+
+.Parraf-Container-Car-JDM {
+    color: var(--wolf-jdm-primary);
+}
+
+.History-Car-JDM {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 3vh;
+    background-color: var(--wolf-jdm-tertiary);
+    border-radius: 20px;
+}
+
+.Div-History-Text-JDM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--wolf-jdm-quaternary);
+    padding: 2vh;
+}
+
+.Text-History-JDM {
+    color: var(--wolf-jdm-primary);
+    font-size: 1.2rem;
+}
+
+.Div-JDM {
+    display: flex;
+    gap: 2vh;
+    padding: 2vh;
+}
+
+.Div-History-IMG-JDM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+}
+
+.Div-History-IMG-JDM img {
+    width: 20%;
+    height: auto;
+    border-radius: 20px;
+}
+
+.Divisor-History-JDM {
+    width: 5px;
+    height: 250px;
+    background-color: var(--wolf-jdm-primary);
+    border-radius: 20px;
+}
+
+.container-cars-JDM {
+    display: flex;
+    gap: 2rem;
+    padding: 4rem;
+    background-color: var(--wolf-jdm-tertiary);
+    border-radius: 10px;
+    margin: 3vh;
+}
+
+.container-cars-filters-JDM {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.div-container-cars-JDM {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    margin: 3vh;
+}
+
+.container-cars-filters-JDM button {
+    background-color: var(--wolf-jdm-primary);
+    color: var(--wolf-jdm-secondary);
+    border: none;
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.container-cars-filters-JDM button:hover {
+    border-bottom: 5px solid var(--wolf-jdm-quaternary);
+    color: var(--wolf-jdm-quaternary);
+    transition: all 0.7s ease;
+}
+
+.Divisor-JDM {
+    width: 7px;
+    height: 550px;
+    background-color: var(--wolf-jdm-primary);
+    border-radius: 20px;
+    border: 2px solid var(--wolf-jdm-quaternary);
+}
+
+.Footer-JDM {
+    background-color: var(--wolf-jdm-primary);
+    border-bottom: 4px solid var(--wolf-jdm-quaternary);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+
+.text-Footer-JDM {
+    color: var(--wolf-jdm-tertiary);
+}
+
+.text-Footer-JDM em {
+    color: var(--wolf-jdm-quaternary);
+}
+
+.Text-Footer-JDM {
+    color: var(--wolf-jdm-tertiary);
+}
+
+.Footer-Content-JDM {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.Divisor-Footer-JDM {
+    width: 5px;
+    height: 75px;
+    background-color: var(--wolf-jdm-secondary);
+    border-radius: 20px;
 }

@@ -1,5 +1,7 @@
 import AbrirUSA from "./Main-USA.js";
+import AbrirJDM from "./Main-JDM.js";
 import MostrarAutos from "./Filters.js";
+
 
 /*export function DibujarAutos(lista) {
     const contenedor = document.getElementById("contenedor-cards-usa");
