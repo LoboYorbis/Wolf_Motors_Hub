@@ -118,7 +118,6 @@ function abrirDetallesWolf(coche) {
                             </div>
                         </div>
                     </div>
-                    <button class="btn-buy">Solicitar Cotización VIP</button>
                 </div>
             </div>
         </div>
@@ -129,7 +128,6 @@ function abrirDetallesWolf(coche) {
     const fondoModal = document.getElementById('wolf-modal');
 
     btnCerrar.onclick = () => modalContainer.innerHTML = '';
-
     fondoModal.onclick = (e) => {
         if (e.target.id === 'wolf-modal') modalContainer.innerHTML = '';
     };
@@ -184,94 +182,112 @@ function AbrirUSA() {
     if (content) content.style.display = "block";
 
     content.innerHTML = `
-    <div class="fade-USA">
+    <section class="Body-USA">
         <section class="header-USA">
             <div class="header-USA-content">
-                <h1 class="Title-Header-USA"><em>Wolf Motors USA</em></h1>
+                <h1 class="Title-Header-USA">Wolf Automobiles</h1>
                 <div class="header-USA-content-buttons">
-                    <button id="btn-back-home">Home</button>
+                    <button id="btn-back-home-usa">Home</button>
                 </div>
             </div>
         </section>
 
         <section class="Bienvenida-USA">
             <div class="IMG-Bienvenida">
-                <img class="img-principal" src="./Assent/US/Dodge-Home.jpg" alt="Dodge Home">
+                <img class="img-principal" src="./Assent/US/Dodge-Home.jpg" alt="Supra Home">
             </div>
             <div class="Text-Bienvenida">
-                <h2 class="Title-Container-Car">Wolf Motors USA</h2>
-                <p class="Parraf-Container-Car">No es solo metal desplazándose; es fuerza bruta domando el asfalto. 
-                Un V8 americano es el rugido de la libertad. Aquí no hay espacio para lo frágil: 
-                es potencia indomable y torque puro.</p>
+                <h2 class="Title-Container-Car-USA">Wolf Motors USA</h2>
+                <p class="Parraf-Container-Car-USA">Bienvenido a Wolf Automobile, el santuario donde el músculo americano se encuentra con la ingeniería de vanguardia. 
+                Aquí no vendemos solo transporte; entregamos el rugido de Detroit, la fuerza bruta de los bloques V8 y la libertad indomable de la carretera abierta. 
+                Desde los legendarios drag strips hasta las rutas transcontinentales, nuestra selección representa el pico de la potencia estadounidense. 
+                Si buscas torque que mueva la tierra, estás en el lugar correcto.</p>
             </div>
         </section>
 
         <section class="History-Car-USA">
-            <div class="Div-History-Text">
-                <h2>EL LEGADO DEL ASFALTO</h2>
-                <p class="Text-History">Desde Detroit hasta las infinitas carreteras, estas máquinas nacieron de una obsesión: 
-                la libertad absoluta. Bienvenido al origen de la fuerza; <em>bienvenido al legado que domina el camino.</em></p>
+            <div class="Div-History-Text-USA">
+                <h2>La Forja de un Imperio: Del Hierro al Asfalto</h2>
+                <p class="Text-History-USA">La historia de Wolf Automobile nace de la obsesión por el torque y la velocidad pura en su estado más visceral. 
+                En una era donde el acero dominaba las calles y la cilindrada lo era todo, nos propusimos curar los ejemplares más feroces de la industria norteamericana. 
+                Nuestra trayectoria está marcada por el respeto a los clásicos que definieron a una generación de rebeldes y el hambre por las nuevas leyendas que hoy desafían los límites de la física con tecnología de competición. 
+                No solo importamos coches; preservamos un legado de potencia que se siente en el pecho cada vez que giras la llave.</p>
             </div>
-            <div class="Div-History-IMG">
-                <img class="IMG-History" src="./Assent/US/FordT.jpg" alt="Ford T">
-                <p class="Text-History-3">1908 – El Origen: Henry Ford lanza el Model T.</p>
-                <img class="IMG-History" src="./Assent/US/V8-clasico.jpg" alt="V8 Clásico">
-                <p class="Text-History-3">1949 – El Primer Motor Moderno: Oldsmobile presenta el Rocket V8.</p>
-                <img class="IMG-History" src="./Assent/US/Pony-Car.jpg" alt="Pony Car">
-                <p class="Text-History-3">1964 – La Era del Pony Car: El lanzamiento del Ford Mustang.</p>
+            <div class="Div-USA">
+                <div class="Div-History-IMG-USA"> 
+                    <img src="./Assent/JDM/JDM-History-1.jpg" alt="">
+                    <p class="Text-History-3-USA">1964: El Nacimiento del Pony Car. Ford presenta el Mustang, creando la categoría "Pony Car": vehículos deportivos, compactos y asequibles que democratizaron el rendimiento y definieron la cultura juvenil de toda una generación.</p>
+                    <img src="./Assent/JDM/JDM-History-1.jpg" alt="">
+                    <p class="Text-History-3-USA">1966: La Conquista de Le Mans. El Ford GT40 logra el histórico 1-2-3 en las 24 Horas de Le Mans, demostrando al mundo que la ingeniería americana podía vencer a la élite europea en su propio terreno.</p>
+                    <img src="./Assent/JDM/JDM-History-1.jpg" alt="">
+                    <p class="Text-History-3-USA">1970: El Apogeo del Big Block. La era del músculo alcanza su pico con leyendas como el Chevelle SS 454, máquinas de cilindrada masiva diseñadas para dominar las calles con un torque brutal y presencia imponente.</p>
+                </div>
+                <div class="Divisor-History-USA">
+                </div>
+                <div class="Div-History-IMG-USA">
+                    <img src="./Assent/JDM/AE86.jpg" alt="">
+                    <p class="Text-History-2-USA">1987: El Regreso del Músculo Negro. Buick lanza el GNX, un V6 Turbo apodado "el coche de Darth Vader" que demostró que el ingenio tecnológico podía humillar a los exóticos italianos en el cuarto de milla.</p>
+                    <img src="./Assent/JDM/JDM-History-1.jpg" alt="">
+                    <p class="Text-History-2-USA">1992: El Veneno Crudo de Detroit. Nace el Dodge Viper RT/10, un monstruo con motor V10 y sin ayudas electrónicas que se convirtió en la interpretación más visceral, pura y peligrosa del sueño americano.</p>
+                    <img src="./Assent/JDM/NSX.jpg" alt="">
+                    <p class="Text-History-2-USA">2005: La Revolución Retro-Futurista. Ford revive el diseño clásico con el Mustang de quinta generación, disparando una nueva guerra de caballos de fuerza entre Detroit y reavivando la pasión por los Muscle Cars modernos.</p>
+                </div>
+                <div class="Divisor-History-USA">
+                </div>
+                <div class="Div-History-IMG-USA">
+                    <img src="./Assent/JDM/JDM-History-1.jpg" alt="">
+                    <p class="Text-History-2-USA">2015: La Invasión Hellcat. Dodge sacude la industria con el motor Hellcat de 707 HP, poniendo cifras de potencia de hiperdeportivos al alcance del público general y redefiniendo los límites de la producción masiva.</p>
+                    <img src="./Assent/JDM/JDM-History-1.jpg" alt="">
+                    <p class="Text-History-2-USA">2020: La Revolución del Motor Central. El Corvette C8 rompe 60 años de tradición al adoptar una configuración de motor central, transformándose en un "asesino de gigantes" capaz de competir con la élite europea.</p>
+                    <img src="./Assent/JDM/JDM-History-1.jpg" alt="">
+                    <p class="Text-History-2-USA">2024: El Último Grito del V8. El Dodge Demon 170 se despide con 1,025 HP de fábrica, marcando el final legendario de la era de combustión interna pura con el coche de aceleración más rápido del mundo.</p>
+                </div>
             </div>
-            <div class="Divisor-Large Divisor-History">
-            </div>
-            <div class="Div-History-IMG">
-                <p class="Text-History-2">1966-1970 – La Guerra del Torque: Los años dorados. Aparecen leyendas como el Dodge Charger, el Chevelle SS y el Plymouth Hemi 'Cuda'. Es la época del "no hay sustituto para la cilindrada".</p>
-                <img class="IMG-History" src="./Assent/US/Dart-1970.jpg" alt="" >
-                <p class="Text-History-2">1987 – El Renacimiento: Tras una década difícil por la crisis del petróleo, el Buick GNX demuestra que el músculo americano está de vuelta, ahora con tecnología de turbocompresores.</p>
-                <img class="IMG-History" src="./Assent/US/Buik-GNX.webp" alt="" >
-                <p class="Text-History-2">2015-Presente – La Era del Hiper-Músculo: Con el Dodge Hellcat y el Shelby GT500, los americanos rompen la barrera de los 700 caballos de fuerza de fábrica, llevando el legado del V8 a niveles de superdeportivo.</p>
-                <img class="IMG-History" src="./Assent/US/Shelby-gt500.jpg" alt="" >
-            </div>
+        </div>
         </section>
 
-        <section class="container-cars">
-            <div class="div-container-cars">
-                <h2 class="Title-Container-Car">Nuestros Autos</h2>
-                <div class="container-cars-filters">
+        <section class="container-cars-USA">
+            <div class="div-container-cars-USA">
+                <h2 class="Title-Container-Car-USA">Nuestros Autos</h2>
+                <div class="container-cars-filters-USA">
                     <button class="btn-filter-brand" data-value="*">Todos</button>
-                    <button class="btn-filter-brand" data-value="Dodge">Dodge</button>
+                    <button class="btn-filter-brand" data-value="Jeep">Jeep</button>
                     <button class="btn-filter-brand" data-value="Ford">Ford</button>
                     <button class="btn-filter-brand" data-value="Chevrolet">Chevrolet</button>
-                    <button class="btn-filter-brand" data-value="Shelby">Shelby</button>
+                    <button class="btn-filter-brand" data-value="Dodge">Dodge</button>
                     <button class="btn-filter-brand" data-value="Ram">Ram</button>
                     <button class="btn-filter-brand" data-value="Hummer">Hummer</button>
-                    <button class="btn-filter-brand" data-value="Jeep">Jeep</button>
+                    <button class="btn-filter-brand" data-value="Shelby">Shelby</button>
                     <button class="btn-filter-brand" data-value="Cadillac">Cadillac</button>
+                    <button class="btn-filter-brand" data-value="Corvette">Corvette</button>
                 </div>
                 <div class="container-cars-filters-buttons">
                     <a class="btn-filter-category" data-value="Sedan">Sedan</a>
                     <a class="btn-filter-category" data-value="SUV">SUV</a>
                     <a class="btn-filter-category" data-value="Pickup">Pickup</a>
-                    <a class="btn-filter-category" data-value="Muscle Car">Muscle</a>
+                    <a class="btn-filter-category" data-value="Muscle Car">Muscle Car</a>
+                    <a class="btn-filter-category" data-value="SuperCar">SuperCar</a>
                 </div>
             </div>
-            <div class="Divisor"></div>
+            <div class="Divisor-USA"></div>
             <div class="container-cars-cards" id="contenedor-cards-usa"></div>
         </section>       
 
         <section class="Footer-USA">
-            <div class="Footer-USA-Content">
-                <h2 class="text-Footer-Title">WOLF MOTOR HUB: DONDE CADA CABALLO DE FUERZA TIENE UNA HISTORIA.</h2>
+            <div class="Footer-Content">
+                <h2 class="text-Footer-USA"><em>WOLF MOTOR HUB</em>: DONDE CADA CABALLO DE FUERZA TIENE UNA HISTORIA.</h2>
             </div>
-            <div class="Divisor-Footer"></div>
-            <div class="Footer-USA-Content">
-                <h2 class="text-Footer-Title">CONTACTO</h2>
+            <div class="Divisor-Footer-USA"></div>
+            <div class="Footer-Content-USA">
+                <h2 class="text-Footer-USA"><em>CONTACTO</em></h2>
                 <ul>
-                    <li class="Text-Footer">Detroit Studio</li>
-                    <li class="Text-Footer">+1 (555) WOLF-AUTO</li>
-                    <li class="Text-Footer">info@wolf-motor-hub.com</li>
+                    <li class="Text-Footer-USA">Detroit Studio</li>
+                    <li class="Text-Footer-USA">+1 (555) WOLF-AUTO</li>
+                    <li class="Text-Footer-USA">info@wolf-motor-hub.com</li>
                 </ul>
             </div>
         </section>
-    </div>
+    </section>
     `;
 
     // 5. INICIALIZACIÓN DE EVENTOS TRAS CARGAR EL HTML
@@ -279,7 +295,7 @@ function AbrirUSA() {
     PintarTarjetas(autos.americanos);
 
     // Evento para volver al Home (si tienes la función AbrirHome definida globalmente)
-    const btnBack = document.getElementById("btn-back-home");
+    const btnBack = document.getElementById("btn-back-home-usa");
     if (btnBack) {
         btnBack.onclick = () => window.location.reload(); // O tu función AbrirHome()
     }

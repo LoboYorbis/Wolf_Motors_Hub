@@ -60,13 +60,60 @@ function abrirDetallesWolfJDM(coche) { // <-- Nombre único
                     
                     <div class="modal-specs">
                         <div class="specs-list">
-                            <div class="spec-item"><span class="spec-label">Motor:</span><span class="spec-value">${coche.specs}</span></div>
-                            <div class="spec-item"><span class="spec-label">Tipo:</span><span class="spec-value">${coche.detail.tipo_motor}</span></div>
-                            <div class="spec-item"><span class="spec-label">Transmisión:</span><span class="spec-value">${coche.detail.transmision}</span></div>
-                            <div class="spec-item"><span class="spec-label">Categoría:</span><span class="spec-value">${coche.categoria}</span></div>
+                            <div class="spec-item">
+                                <span class="spec-label">Motor:</span>
+                                <span class="spec-value">${coche.specs}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Tipo de motor:</span>
+                                <span class="spec-value">${coche.detail.tipo_motor}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Aceleración:</span>
+                                <span class="spec-value">${coche.detail.aceleracion}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Torque:</span>
+                                <span class="spec-value">${coche.detail.torque}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Transmisión:</span>
+                                <span class="spec-value">${coche.detail.transmision}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Tipo de transmisión:</span>
+                                <span class="spec-value">${coche.detail.tipo_transmision}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Frenos:</span>
+                                <span class="spec-value">${coche.detail.frenos}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Consumo:</span>
+                                <span class="spec-value">${coche.detail.consumo}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Medidas:</span>
+                                <span class="spec-value">${coche.detail.medidas}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Seguridad:</span>
+                                <span class="spec-value">${coche.detail.seguridad}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Airbags:</span>
+                                <span class="spec-value">${coche.detail.airbags}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Extra:</span>
+                                <span class="spec-value">${coche.detail.extra}</span>
+                            </div>
+                            <div class="spec-item">
+                                <span class="spec-label">Categoría:</span>
+                                <span class="spec-value">${coche.categoria}</span>
+                            </div>
                         </div>
                     </div>
-                    <button class="btn-buy">Solicitar Cotización JDM</button>
                 </div>
             </div>
         </div>
@@ -126,9 +173,9 @@ function AbrirJDM() {
     <section class="Body-JDM">
         <section class="header-JDM">
             <div class="header-JDM-content">
-                <h1 class="Title-Header-JDM">Wolf Motors <em>JDM</em></h1>
+                <h1 class="Title-Header-JDM">Wolf Imports</h1>
                 <div class="header-JDM-content-buttons">
-                    <button id="btn-back-home">Home</button>
+                    <button id="btn-back-home-jdm">Home</button>
                 </div>
             </div>
         </section>
@@ -164,11 +211,11 @@ function AbrirJDM() {
                 <div class="Divisor-History-JDM">
                 </div>
                 <div class="Div-History-IMG-JDM">
-                    <img src="./Assent/JDM/JDM-History-1.jpg" alt="">
+                    <img src="./Assent/JDM/AE86.jpg" alt="">
                     <p class="Text-History-2-JDM">Los 80s - Dominio del Touge: El balance supera a la potencia. Coches como el AE86 demuestran que la agilidad es la clave en las montañas.</p>
                     <img src="./Assent/JDM/JDM-History-1.jpg" alt="">
                     <p class="Text-History-2-JDM">1989 - Pacto de Caballeros: Las marcas limitan sus coches a 276 HP. Nacen los "monstruos dormidos" subestimados por los ingenieros.</p>
-                    <img src="./Assent/JDM/JDM-History-1.jpg" alt="">
+                    <img src="./Assent/JDM/NSX.jpg" alt="">
                     <p class="Text-History-2-JDM">1990 - El "Ferrari Killer": Honda lanza el NSX. Aluminio, motor central y el ADN de Ayrton Senna humillan a los deportivos europeos.</p>
                 </div>
                 <div class="Divisor-History-JDM">
@@ -198,16 +245,17 @@ function AbrirJDM() {
                     <button class="btn-filter-brand" data-value="Mitsubishi">Mitsubishi</button>
                     <button class="btn-filter-brand" data-value="Acura">Acura</button>
                     <button class="btn-filter-brand" data-value="Lexus">Lexus</button>
+                    <button class="btn-filter-brand" data-value="Suzuki">Suzuki</button>
                 </div>
                 <div class="container-cars-filters-buttons">
                     <a class="btn-filter-category" data-value="Sedan">Sedan</a>
                     <a class="btn-filter-category" data-value="SUV">SUV</a>
-                    <a class="btn-filter-category" data-value="Pickup">Pickup</a>
+                    <a class="btn-filter-category" data-value="Supercar">Supercar</a>
                     <a class="btn-filter-category" data-value="Deportivo">Deportivo</a>
                 </div>
             </div>
             <div class="Divisor-JDM"></div>
-            <div class="container-cars-cards" id="contenedor-cards-usa"></div>
+            <div class="container-cars-cards" id="contenedor-cards-jdm"></div>
         </section>       
 
         <section class="Footer-JDM">
